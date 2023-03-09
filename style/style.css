@@ -204,19 +204,43 @@ nav ul li a {
 
 /* style for when sitcky is applied */
 .stuck .navbar.sticky-top {
-    padding-top: .12rem !important;
-    padding-bottom: .12rem !important;
+    padding-top: .1rem !important;
+    padding-bottom: .1rem !important;
 }
 
 /* Background style on the main slideshow section */
 .slideshow {
     height: 800px;/* set the height of the slideshow container */
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("../assets/front-view-home-slider-winter.jpg") no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("../assets/slideshow-picture-01.jpg") no-repeat center;
     background-size: cover;
     position: relative;
 }
+/* newsletter */
+.hide-section {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-out;
+}
+.show-section {
+    height: 80px; /* adjust this to match your content height */
+}
 
- /*Mobile style breakpoint if the window width > 768px*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Mobile style breakpoint if the window width > 768px*/
 @media (min-width: 768px){
     /* spacing on the navbar links */
     .navbar li {
@@ -239,5 +263,14 @@ nav ul li a {
     }
     nav.navbar ul li a:hover:after {
         width: 100%;
+    }
+    .newsletter-input{
+        width: 50%;
+    }
+}
+/* Mobile style breakpoint if the window width < 768px*/
+@media (max-width: 768px){
+    .newsletter-header{
+        display: none;
     }
 }
