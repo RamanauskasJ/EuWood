@@ -225,11 +225,22 @@ nav ul li a {
     height: 80px; /* adjust this to match your content height */
 }
 
-/* Accommodation bg color */
+/* Accommodation section bg color */
 .accommodation{
     border-bottom: 1px solid #A5A5A5;
     border-top: 1px solid #A5A5A5;
     background-color: #D3D3D3;
+}
+
+/* Our projects section */
+.card-bg {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-color: #E5E4E2;
+}
+
+.card-bg:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
  /* Mobile style breakpoint if the window width > 768px*/
@@ -267,6 +278,27 @@ nav ul li a {
     }
 }
 
-.ratings{
-    color: yellow;
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
+
+form label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+
+
+
