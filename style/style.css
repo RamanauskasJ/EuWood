@@ -211,7 +211,7 @@ nav ul li a {
 /* Background style on the main slideshow section */
 .slideshow {
     height: 800px;/* set the height of the slideshow container */
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("../assets/slideshow-picture-01.jpg") no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("../assets/slideshow-picture-02.jpg") no-repeat center;
     background-size: cover;
     position: relative;
 }
@@ -225,20 +225,12 @@ nav ul li a {
     height: 80px; /* adjust this to match your content height */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Accommodation bg color */
+.accommodation{
+    border-bottom: 1px solid #A5A5A5;
+    border-top: 1px solid #A5A5A5;
+    background-color: #D3D3D3;
+}
 
  /* Mobile style breakpoint if the window width > 768px*/
 @media (min-width: 768px){
@@ -273,4 +265,8 @@ nav ul li a {
     .newsletter-header{
         display: none;
     }
+}
+
+.ratings{
+    color: yellow;
 }

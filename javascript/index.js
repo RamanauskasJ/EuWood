@@ -20,7 +20,7 @@ function changeBackgroundImage() {
 }
 
 function startSlideshow() {
-    setInterval(changeBackgroundImage, 15000);
+    setInterval(changeBackgroundImage, 10000);
 }
 
 startSlideshow();
