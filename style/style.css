@@ -208,10 +208,11 @@ nav ul li a {
     padding-bottom: .1rem !important;
 }
 
+/* Landing page */
 /* Background style on the main slideshow section */
 .slideshow {
     height: 800px;/* set the height of the slideshow container */
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url("../assets/slideshow-picture-02.jpg") no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ), url("../assets/slideshow-picture-02.jpg") no-repeat center;
     background-size: cover;
     position: relative;
 }
@@ -241,6 +242,47 @@ nav ul li a {
 
 .card-bg:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* Contacts page */
+/* Form style */
+.row.single-form {
+    box-shadow: 0 2px 20px 0px rgba(0,0,0,0.5);
+}
+
+.right textarea {
+    resize: none;
+    height: 168px;
+}
+.left{
+    background-image: url("../assets/Questions.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.right i {
+    position: absolute;
+    font-size: 100px;
+    left: 99%;
+    top: 43%;
+    color: #fff;
+}
+
+.right button {
+    border: none;
+    background: black;
+    width: 180px;
+}
+
+/*responsive contact form arrow icon*/
+@media (min-width:768px) and (max-width:991px){
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
 }
 
  /* Mobile style breakpoint if the window width > 768px*/
@@ -276,29 +318,27 @@ nav ul li a {
     .newsletter-header{
         display: none;
     }
+
+    /*contact form  style*/
+    .left {
+        padding: 90px 15px;
+        text-align: center;
+    }
+    .left h2 {
+        font-size: 25px;
+    }
+    .right {
+        padding: 25px;
+    }
+    .right i {
+        top: 90%;
+        transform: rotate(90deg);
+        left: 46%;
+    }
+    .right button {
+        width: 150px;
+        padding: 12px 0;
+    }
 }
-
-form {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-}
-
-form label {
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-
 
 
