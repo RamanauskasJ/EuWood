@@ -38,7 +38,7 @@ function updateText() {
 
 function changeBackgroundImage() {
     const section = document.querySelector('.slideshow');
-    section.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(${images[currentIndex]})`;
+    section.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(${images[currentIndex]})`;
     currentIndex = (currentIndex + 1) % images.length;
     updateText(currentIndex);
 }

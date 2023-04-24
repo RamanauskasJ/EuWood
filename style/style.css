@@ -212,7 +212,7 @@ nav ul li a {
 /* Background style on the main slideshow section */
 .slideshow {
     height: 800px;/* set the height of the slideshow container */
-    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) ), url("../assets/slideshow-picture-02.jpg") no-repeat center;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url("../assets/slideshow-picture-02.jpg") no-repeat center;
     background-size: cover;
     position: relative;
 }
@@ -228,9 +228,9 @@ nav ul li a {
 
 /* Accommodation section bg color */
 .accommodation{
-    border-bottom: 1px solid #A5A5A5;
-    border-top: 1px solid #A5A5A5;
-    background-color: #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    border-top: 1px solid #D3D3D3;
+    background-color: #e8e8e8;
 }
 
 /* Our projects section */
@@ -241,9 +241,68 @@ nav ul li a {
 }
 
 .card-bg:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0,5,0,0.25), 0 10px 10px rgba(0,0,0,0.25);
 }
 
+/* Gallery page */
+/* Gallery start */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-item-header {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.gallery-item.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Gallery end */
+
+/* Gallery inner page start*/
+.gallery-wrap .img-big-wrap img {
+    height: 450px;
+    width: auto;
+    display: inline-block;
+    cursor: zoom-in;
+}
+.gallery-wrap .img-small-wrap .item-gallery {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 7px 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gallery-wrap .img-small-wrap {
+    text-align: center;
+}
+.gallery-wrap .img-small-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
+/* Gallery inner page end*/
 
 /* Contacts page */
 /* Form style */
@@ -256,7 +315,7 @@ nav ul li a {
     height: 168px;
 }
 .left{
-    background-image: url("../assets/Questions.jpg");
+    background-image: url("../assets/questions.jpg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -279,6 +338,7 @@ nav ul li a {
 /*responsive contact form arrow icon*/
 @media (min-width:768px) and (max-width:991px){
     .right i {
+        display: none;
         top: -52px;
         transform: rotate(90deg);
         left: 50%;
@@ -312,6 +372,11 @@ nav ul li a {
     .newsletter-input{
         width: 50%;
     }
+    nav.navbar ul li #navbarDropdown:after,
+    nav.fill ul li #navbarDropdown:after{
+        background: none;
+    }
+
 }
 /* Mobile style breakpoint if the window width < 768px*/
 @media (max-width: 768px){
@@ -331,7 +396,7 @@ nav ul li a {
         padding: 25px;
     }
     .right i {
-        top: 90%;
+        top: 92%;
         transform: rotate(90deg);
         left: 46%;
     }
@@ -341,4 +406,15 @@ nav ul li a {
     }
 }
 
+.inner-gallery img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.inner-gallery figure:hover img {
+    opacity: .7;
+}
+.inner-gallery img:hover a {
+    text-decoration: underline;
+}
 
