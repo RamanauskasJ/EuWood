@@ -44,7 +44,7 @@ function changeBackgroundImage() {
 }
 
 function startSlideshow() {
-    setInterval(changeBackgroundImage, 2000);
+    setInterval(changeBackgroundImage, 6000);
 }
 
 startSlideshow();
