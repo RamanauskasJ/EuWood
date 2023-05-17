@@ -10,6 +10,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="style/style.css" rel="stylesheet">
-    <title>Index</title>
+    <title>Mediniai Namukai</title>
 </head>
 <body>

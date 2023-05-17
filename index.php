@@ -265,5 +265,5 @@
     </div>
 </section>
 <!--Projects end-->
-
+<script type="text/javascript" src="javascript/slideshow.js"></script>
 <?php require_once('common/footer.php');?>
