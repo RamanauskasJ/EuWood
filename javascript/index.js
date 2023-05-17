@@ -18,20 +18,20 @@ function updateText() {
     const description = document.querySelector('#newsletter p.lead');
     switch(currentIndex) {
         case 0:
-            title.innerHTML = 'Looking for <span class="text-warning">Wood Cabins</span> in Europe for your next getaway?';
-            description.innerHTML = 'Escape to the serene beauty of the countryside in one of our cozy and stylish wood cabins, perfect for a weekend retreat or a longer stay.';
+            title.innerHTML = 'Ieškote <span class="text-warning">Medinių Namukų</span> jūsų poilsiui?';
+            description.innerHTML = 'Pasinaudokite proga pajusti vasaros šiluma mūsų jaukiuose ir stilinguose medininiuose nameliuose, puikiai tinkančių pailsėti savaitgaliui arba ilgesniam apsistojimui.';
             break;
         case 1:
-            title.innerHTML = 'Discover the perfect <span class="text-warning">Wood Cabin</span> for your backyard';
-            description.innerHTML = 'Transform your backyard into a peaceful oasis with our range of customizable wood cabins, designed to fit your unique style and needs.';
+            title.innerHTML = 'Atraskite geriausia <span class="text-warning">Medinį Namuką</span> jūsų teritorijai';
+            description.innerHTML = 'Paverskite savo kiemą į ramybės oazę pasirinkdami vieną iš daugelio skirtingų stilių medinių namukų.';
             break;
         case 2:
-            title.innerHTML = 'Upgrade your living space with a <span class="text-warning">Wood Cabin</span>';
-            description.innerHTML = 'Looking for a way to add more space and character to your home? Our wood cabins are the perfect solution, providing a cozy and functional living area.';
+            title.innerHTML = 'Atnaujinkite savo gyvenamają vietą su <span class="text-warning">Mediniais Namukais</span>';
+            description.innerHTML = 'Ieškote kaip atnaujinti savo namus? Mūsų mediniai namukai yra puikus būdas greitai sukurti naują poilsio vietą.';
             break;
         case 3:
-            title.innerHTML = 'Experience the ultimate relaxation in a <span class="text-warning">Wood Cabin</span>';
-            description.innerHTML = 'Indulge in a luxury escape in one of our premium wood cabins, featuring top-of-the-line amenities and breathtaking views.';
+            title.innerHTML = 'Lengvai įrengiami <span class="text-warning">Mediniai Namukai</span>';
+            description.innerHTML = 'Greitai pristatomi ir įrengiami mediniai Namukai yra puiki galimybė pridėti gyvenamosios erdvės jūsų namuose.';
             break;
     }
 }
@@ -62,9 +62,9 @@ const input = document.querySelector('input[type="text"]');
 
 function updatePlaceholder() {
     if (window.innerWidth < 768) {
-        input.placeholder = 'Enter your email to subscribe for newsletter';
+        input.placeholder = 'Prenumeruoti mūsų naujienlaiškiui';
     } else {
-        input.placeholder = 'Enter Email';
+        input.placeholder = 'El Paštas';
     }
 }
 
