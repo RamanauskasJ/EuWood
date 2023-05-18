@@ -2,6 +2,9 @@
 
 <?php require_once('common/navbar.php');?>
 
+
+
+
 <span class="position-absolute trigger">
 <!-- hidden trigger to apply 'stuck' styles -->
 </span>
@@ -265,5 +268,6 @@
     </div>
 </section>
 <!--Projects end-->
+
 <script type="text/javascript" src="javascript/slideshow.js"></script>
 <?php require_once('common/footer.php');?>

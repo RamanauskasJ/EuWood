@@ -197,6 +197,15 @@ nav ul li a {
     font-weight: 600;
     text-transform: uppercase;
 }
+#languageIcon{
+    font-size: 32px;
+}
+/* language translation anchor tags */
+.gtranslate_wrapper a{
+    color:black;
+    display: block;
+    padding: 5px 10px 5px 20px;
+}
 
 .sticky-top {
     transition: all 0.25s ease-in-out;
@@ -376,10 +385,16 @@ nav ul li a {
     nav.fill ul li #navbarDropdown:after{
         background: none;
     }
-
+    #languageDropdown{
+        display: block;
+    }
 }
 /* Mobile style breakpoint if the window width < 768px*/
 @media (max-width: 768px){
+    #languageDropdown{
+        display: none;
+    }
+
     .newsletter-header{
         display: none;
     }
@@ -417,4 +432,3 @@ nav ul li a {
 .inner-gallery img:hover a {
     text-decoration: underline;
 }
-

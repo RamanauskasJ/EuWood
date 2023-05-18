@@ -14,18 +14,18 @@
                   <div class="right position-relative p-5">
                       <h2><span>Klauskite mūsų</span></h2>
                       <i class="fa fa-caret-right"></i>
-                      <form>
+                      <form action="common/submit_email_form.php" method="POST">
                           <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Jūsų vardas</label>
-                              <input type="text" class="form-control border border-dark" id="exampleInputName1" aria-describedby="emailHelp">
+                              <label for="exampleInputName1" class="form-label">Jūsų vardas</label>
+                              <input type="text" class="form-control border border-dark" name="name" id="exampleInputName1" aria-describedby="emailHelp" required="true">
                           </div>
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label">Elektroninis paštas</label>
-                              <input type="email" class="form-control border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+                              <input type="email" class="form-control border border-dark" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
                           </div>
                           <div class="mb-3">
-                              <label for="exampleInputPassword1" class="form-label">Žinutė</label>
-                              <textarea type="password" class="form-control border border-dark" id="exampleInputPassword1"></textarea>
+                              <label for="exampleInputMessage1" class="form-label">Žinutė</label>
+                              <textarea class="form-control border border-dark" name="message" id="exampleInputMessage1" required="true"></textarea>
                           </div>
                           <button type="submit" class="btn btn-secondary mt-3 p-3">Siūsti</button>
                       </form>
@@ -33,7 +33,6 @@
               </div>
               <div class="col-md-12 col-lg-6">
                   <div class="left text-white font-weight-bold text-capitalize bg-dark h-100 d-flex align-items-center justify-content-center">
-<!--                          <h2><span>Write us a message</span></h2>-->
                   </div>
               </div>
           </div>
@@ -41,4 +40,5 @@
 </section>
 <!-- Write us form end-->
 
+<script type="text/javascript" src="javascript/contacts-form-validation.js"></script>
 <?php require_once('common/footer.php');?>

@@ -18,17 +18,18 @@
                 <li class="nav-item">
                     <a href="contacts.php" class="nav-link">Kontaktai</a>
                 </li>
-                <!--                    <li class="nav-item dropdown">-->
-                <!--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-                <!--                            <i class="fa fa-language text-dark"></i>-->
-                <!--                        </a>-->
-                <!--                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-                <!--                            <li><a class="dropdown-item" href="#" hreflang="lt">Lietuvių</a></li>-->
-                <!--                            <li><a class="dropdown-item" href="#" hreflang="en">English</a></li>-->
-                <!--                        </ul>-->
-                <!--                    </li>-->
+                <li class="nav-item dropdown" id="languageDropdown">
+                    <a class="nav-link dropdown-toggle p-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i id="languageIcon" class="fa fa-globe text-dark"></i>
+                    </a>
+                        <ul class="dropdown-menu gtranslate_wrapper" aria-labelledby="navbarDropdown">
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- Navbar end -->
+
+<script>window.gtranslateSettings = {"default_language":"lt","detect_browser_language":true,"languages":["lt","en"],"wrapper_selector":".gtranslate_wrapper"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/ln.js" defer></script>
