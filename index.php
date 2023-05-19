@@ -2,14 +2,7 @@
 
 <?php require_once('common/navbar.php');?>
 
-
-
-
-<span class="position-absolute trigger">
-<!-- hidden trigger to apply 'stuck' styles -->
-</span>
-
-<!-- Showcase main slideshow start-->
+<!-- Slideshow start -->
 <section class="slideshow bg-dark text-light d-flex align-items-center" id="slideshow">
     <div class="container">
         <div class="text-center" id="newsletter">
@@ -19,7 +12,7 @@
         </div>
     </div>
 </section>
-<!-- Showcase main slideshow end -->
+<!-- Slideshow end -->
 
 <!-- Newsletter start -->
 <section class="bg-primary text-light hide-section" >
@@ -94,7 +87,7 @@
 </section>
 <!-- Boxes end -->
 
-<!--Testimonial start-->
+<!-- Testimonial start -->
 <section class="py-3">
     <div class="container">
         <div id="review-carousel" class="carousel slide text-center" data-bs-ride="carousel">
@@ -155,7 +148,7 @@
         </div>
     </div>
 </section>
-<!--Testimonial end-->
+<!-- Testimonial end -->
 
 <!-- Accommodation start -->
 <section class="py-5 text-dark accommodation">
@@ -216,7 +209,7 @@
 </section>
 <!-- Accommodation end -->
 
-<!--Projects start-->
+<!-- Projects start -->
 <section id="portfolio" class="portfolio py-5">
     <div class="container">
         <div class="row">
@@ -267,7 +260,8 @@
         </div>
     </div>
 </section>
-<!--Projects end-->
+<!-- Projects end -->
+
+<?php require_once('common/footer.php');?>
 
 <script type="text/javascript" src="javascript/slideshow.js"></script>
-<?php require_once('common/footer.php');?>

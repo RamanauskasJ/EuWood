@@ -2,10 +2,6 @@
 
 <?php require_once('common/navbar.php');?>
 
-<span class="position-absolute trigger">
-         <!-- hidden trigger to apply 'stuck' styles -->
-      </span>
-
 <section class="pt-4">
     <div class="container">
         <a href="catalog.php" class="btn btn-transparent">

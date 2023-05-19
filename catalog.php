@@ -2,10 +2,6 @@
 
 <?php require_once('common/navbar.php');?>
 
-<span class="position-absolute trigger">
-         <!-- hidden trigger to apply 'stuck' styles -->
-      </span>
-
 <section class="py-5">
     <div class="container">
         <div class="row g-5">

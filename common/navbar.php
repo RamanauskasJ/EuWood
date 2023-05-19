@@ -31,5 +31,6 @@
 </nav>
 <!-- Navbar end -->
 
-<script>window.gtranslateSettings = {"default_language":"lt","detect_browser_language":true,"languages":["lt","en"],"wrapper_selector":".gtranslate_wrapper"}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/ln.js" defer></script>
+<!-- Animation Trigger start -->
+<span class="position-absolute trigger"></span>
+<!-- Animation Trigger end -->

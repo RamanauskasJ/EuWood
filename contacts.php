@@ -1,12 +1,11 @@
 <?php require_once('common/html-head.php');?>
-
 <?php require_once('common/navbar.php');?>
 
-<span class="position-absolute trigger">
-<!-- hidden trigger to apply 'stuck' styles -->
-</span>
+<!-- Snackbar start -->
+<div id="snackbar"></div>
+<!-- Snackbar end -->
 
-<!-- Write us form start-->
+<!-- Email form start -->
 <section class="py-5">
       <div class="container">
           <div class="row single-form g-0">
@@ -14,20 +13,22 @@
                   <div class="right position-relative p-5">
                       <h2><span>Klauskite mūsų</span></h2>
                       <i class="fa fa-caret-right"></i>
-                      <form action="common/submit_email_form.php" method="POST">
+                      <form id="emailForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                           <div class="mb-3">
-                              <label for="exampleInputName1" class="form-label">Jūsų vardas</label>
-                              <input type="text" class="form-control border border-dark" name="name" id="exampleInputName1" aria-describedby="emailHelp" required="true">
+                              <label for="userName" class="form-label">Jūsų vardas</label>
+                              <input type="text" class="form-control border border-dark" name="name" id="userName"
+                                     aria-describedby="emailHelp" required="true">
                           </div>
                           <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Elektroninis paštas</label>
-                              <input type="email" class="form-control border border-dark" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" required="true">
+                              <label for="userEmail" class="form-label">Elektroninis paštas</label>
+                              <input type="email" class="form-control border border-dark" name="email" id="userEmail"
+                                     aria-describedby="emailHelp" required="true">
                           </div>
                           <div class="mb-3">
-                              <label for="exampleInputMessage1" class="form-label">Žinutė</label>
-                              <textarea class="form-control border border-dark" name="message" id="exampleInputMessage1" required="true"></textarea>
+                              <label for="userMessage" class="form-label">Žinutė</label>
+                              <textarea class="form-control border border-dark" name="message" id="userMessage" required="true"></textarea>
                           </div>
-                          <button type="submit" class="btn btn-secondary mt-3 p-3">Siūsti</button>
+                          <button type="submit" id="submitButton" class="btn btn-secondary mt-3 p-3">Siūsti</button>
                       </form>
                   </div>
               </div>
@@ -38,7 +39,7 @@
           </div>
       </div>
 </section>
-<!-- Write us form end-->
+<!-- Email form end -->
 
-<script type="text/javascript" src="javascript/contacts-form-validation.js"></script>
 <?php require_once('common/footer.php');?>
+<script type="text/javascript" src="javascript/contacts-form-validation.js"></script>
