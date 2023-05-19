@@ -35,5 +35,6 @@
 <script src="public/bootstrap/js/bootstrap.min.js"></script>
 <script src="public/jquery/jquery-3.7.0.min.js"></script>
 <script type="text/javascript" src="javascript/index.js"></script>
+
 </body>
 </html>

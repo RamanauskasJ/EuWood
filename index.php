@@ -8,21 +8,24 @@
         <div class="text-center" id="newsletter">
             <h3>Vasariniai <span class="text-warning"> Mediniai Namukai</span>  pasiruošę būti išsiųsti į jūsų namus.</h3>
             <p class="lead">Kompaktiški ir patogūs mediniai namukai lengvai irengiami jūsų teritorijoje suteikia vieta poilsiui, bendravimui ir jūsų ramybei.</p>
-            <button class="btn btn-outline-warning" type="button" id="pin-button">Sužinokite daugiau</button>
+            <button class="btn btn-outline-warning" type="button" id="pin-button" onclick="toggle()">Sužinokite daugiau</button>
+            <div id="arrow-container">
+                <div class="arrow toggle-down"></div>
+            </div>
         </div>
     </div>
 </section>
 <!-- Slideshow end -->
 
 <!-- Newsletter start -->
-<section class="bg-primary text-light hide-section" >
+<section class="bg-primary text-light hide-section">
     <div class="container pt-3">
         <div class="d-md-flex justify-content-between align-items-center">
             <h3 class="mb-3 mb-md-o newsletter-header">Gaukite mūsų naujienlaiškį</h3>
-            <div class="input-group mb-3 newsletter-input">
-                <input type="text" class="form-control" placeholder="El paštas">
-                <button class="btn btn-dark btn-lg" type="button" id="button-newsletter">Prenumeruoti</button>
-            </div>
+            <form id="newsletterForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" class="input-group mb-3 newsletter-input">
+                <input type="email" name="userNewsletterEmail" id="userNewsletterEmail" class="form-control" placeholder="El paštas" required>
+                <button class="btn btn-dark btn-lg" type="submit" id="submitNewsletter">Prenumeruoti</button>
+            </form>
         </div>
     </div>
 </section>
@@ -265,3 +268,4 @@
 <?php require_once('common/footer.php');?>
 
 <script type="text/javascript" src="javascript/slideshow.js"></script>
+<script type="text/javascript" src="javascript/newsletter-form-validation.js"></script>

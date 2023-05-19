@@ -47,7 +47,7 @@ button.addEventListener('click', () => {
 });
 
 // Update input field placeholder text for the newsletter
-const input = document.querySelector('input[type="text"]');
+const input = document.querySelector('input[type="email"]');
 
 function updatePlaceholder() {
     if (window.innerWidth < 768) {
@@ -56,6 +56,21 @@ function updatePlaceholder() {
         input.placeholder = 'El Paštas';
     }
 }
+updatePlaceholder()
 
-updatePlaceholder();
-window.addEventListener('resize', updatePlaceholder);
+// Define the CSS class names
+var upClass = 'toggle-up';
+var downClass = 'toggle-down';
+
+// Cache the arrow element outside the toggle function
+var arrow = document.querySelector('.arrow');
+
+// Function to toggle the arrow classes
+function toggle() {
+    // Toggle the 'toggle-down' and 'toggle-up' classes on the arrow element
+    arrow.classList.toggle(downClass);
+    arrow.classList.toggle(upClass);
+}
+
+
+

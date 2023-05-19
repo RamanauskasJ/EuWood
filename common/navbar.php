@@ -34,3 +34,7 @@
 <!-- Animation Trigger start -->
 <span class="position-absolute trigger"></span>
 <!-- Animation Trigger end -->
+
+<!-- Snackbar start -->
+<div id="snackbar"></div>
+<!-- Snackbar end -->

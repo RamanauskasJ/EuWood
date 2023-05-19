@@ -1,10 +1,6 @@
 <?php require_once('common/html-head.php');?>
 <?php require_once('common/navbar.php');?>
 
-<!-- Snackbar start -->
-<div id="snackbar"></div>
-<!-- Snackbar end -->
-
 <!-- Email form start -->
 <section class="py-5">
       <div class="container">
