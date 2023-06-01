@@ -2,7 +2,12 @@
 let timeoutId; // Declare the timeoutId variable outside the snackbarFunction
 
 // JavaScript for the gtranslate
-window.gtranslateSettings = {"default_language":"lt","detect_browser_language":true,"languages":["lt","en"],"wrapper_selector":".gtranslate_wrapper"}
+window.gtranslateSettings = {
+    "default_language": "lt",
+    "detect_browser_language": true,
+    "languages": ["lt", "en"],
+    "wrapper_selector": ".gtranslate_wrapper"
+}
 
 // Intersection observer to toggle class 'stuck' on html element on user scroll
 const observer = new IntersectionObserver((entries, observer) => {
@@ -23,7 +28,7 @@ function snackbarFunction(message) {
     x.innerHTML = message;
     clearTimeout(timeoutId);
     x.className = "show";
-    timeoutId = setTimeout(function() {
+    timeoutId = setTimeout(function () {
         x.className = x.className.replace("show", "");
     }, 5950); // Adjust the timeout duration as per your requirements
 }

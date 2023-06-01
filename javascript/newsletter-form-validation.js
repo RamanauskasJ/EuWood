@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
     var isFormSubmitting = false;
 
-    $('#newsletterForm').submit(function(event) {
+    $('#newsletterForm').submit(function (event) {
         event.preventDefault();
 
         if (isFormSubmitting) {
@@ -19,14 +19,14 @@ $(document).ready(function() {
             type: 'POST',
             url: 'common/subscribe.php',
             data: formData,
-            success: function(response) {
+            success: function (response) {
                 snackbarFunction("Prenumeracija Sėkminga!");
             },
-            error: function(xhr, status, error) {
+            error: function (xhr, status, error) {
                 snackbarFunction("Įvyko klaida");
             },
-            complete: function() {
-                setTimeout(function() {
+            complete: function () {
+                setTimeout(function () {
                     $submitButton.prop('disabled', false);
                     isFormSubmitting = false;
                 }, 6000);
@@ -34,7 +34,7 @@ $(document).ready(function() {
         });
     });
 
-    $('#userNewsletterEmail').on('input', function() {
+    $('#userNewsletterEmail').on('input', function () {
         var emailValue = this.value;
         var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 

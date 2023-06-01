@@ -1,14 +1,18 @@
-<?php require_once('common/html-head.php');?>
+<?php require_once('common/html-head.php'); ?>
 
-<?php require_once('common/navbar.php');?>
+<?php require_once('common/navbar.php'); ?>
 
 <!-- Slideshow start -->
 <section class="slideshow bg-dark text-light d-flex align-items-center" id="slideshow">
     <div class="container">
         <div class="text-center" id="newsletter">
-            <h3>Vasariniai <span class="text-warning"> Mediniai Namukai</span>  pasiruošę būti išsiųsti į jūsų namus.</h3>
-            <p class="lead">Kompaktiški ir patogūs mediniai namukai lengvai irengiami jūsų teritorijoje suteikia vieta poilsiui, bendravimui ir jūsų ramybei.</p>
-            <button class="btn btn-outline-warning" type="button" id="pin-button" onclick="toggle()">Sužinokite daugiau</button>
+            <h3>Vasariniai <span class="text-warning"> Mediniai Namukai</span> pasiruošę būti išsiųsti į jūsų namus.
+            </h3>
+            <p class="lead">Kompaktiški ir patogūs mediniai namukai lengvai irengiami jūsų teritorijoje suteikia vieta
+                poilsiui, bendravimui ir jūsų ramybei.</p>
+            <button class="btn btn-outline-warning" type="button" id="pin-button" onclick="toggle()">Sužinokite
+                daugiau
+            </button>
             <div id="arrow-container">
                 <div class="arrow toggle-down"></div>
             </div>
@@ -22,8 +26,10 @@
     <div class="container pt-3">
         <div class="d-md-flex justify-content-between align-items-center">
             <h3 class="mb-3 mb-md-o newsletter-header">Gaukite mūsų naujienlaiškį</h3>
-            <form id="newsletterForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" class="input-group mb-3 newsletter-input">
-                <input type="email" name="userNewsletterEmail" id="userNewsletterEmail" class="form-control" placeholder="El paštas" required>
+            <form id="newsletterForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST"
+                  class="input-group mb-3 newsletter-input">
+                <input type="email" name="userNewsletterEmail" id="userNewsletterEmail" class="form-control"
+                       placeholder="El paštas" required>
                 <button class="btn btn-dark btn-lg" type="submit" id="submitNewsletter">Prenumeruoti</button>
             </form>
         </div>
@@ -40,7 +46,7 @@
                 <div class="card border-0">
                     <div class="card-body text-center">
                         <div class="h1 mb-3">
-                        <img src="assets/quality-badge.png" alt="quality" width="200" height="200">
+                            <img src="assets/quality-badge.png" alt="quality" width="200" height="200">
                         </div>
                         <h3 class="card-title mb-3">
                             Kokybės standartas
@@ -62,8 +68,10 @@
                             Lankstumas
                         </h3>
                         <p class="card-text">
-                            Funkcionalumas yra mūsų medinių namukų pagrindinis bruožas, kuris garantuoja jums komfortą, jaukumą ir malonų buvimą.
-                            Mediniai namukai yra puikus pasirinkimas tiems, kurie svajoja turėti gretai įrengiamą vasarnamį.
+                            Funkcionalumas yra mūsų medinių namukų pagrindinis bruožas, kuris garantuoja jums komfortą,
+                            jaukumą ir malonų buvimą.
+                            Mediniai namukai yra puikus pasirinkimas tiems, kurie svajoja turėti gretai įrengiamą
+                            vasarnamį.
 
                         </p>
                     </div>
@@ -98,7 +106,8 @@
                 <div class="carousel-item active">
                     <div class="card border-0">
                         <div class="card-body">
-                            <p class="card-text lead">"Kokybiškas monaco stiliaus namukas suteikė lengvai prieinama vietą poilsiui mano namuose"</p>
+                            <p class="card-text lead">"Kokybiškas monaco stiliaus namukas suteikė lengvai prieinama
+                                vietą poilsiui mano namuose"</p>
                             <div class="d-flex justify-content-center">
                                 <i class='fa fa-star' style='color: #f3da35'></i>
                                 <i class='fa fa-star' style='color: #f3da35'></i>
@@ -113,7 +122,8 @@
                 <div class="carousel-item">
                     <div class="card border-0">
                         <div class="card-body">
-                            <p class="card-text lead">"Nenusivyliau medinio namuko įšvaizda. Namelis puikiai derinasi prie mano gyvenamosios erdvės"</p>
+                            <p class="card-text lead">"Nenusivyliau medinio namuko įšvaizda. Namelis puikiai derinasi
+                                prie mano gyvenamosios erdvės"</p>
                             <div class="d-flex justify-content-center">
                                 <i class='fa fa-star' style='color: #f3da35'></i>
                                 <i class='fa fa-star' style='color: #f3da35'></i>
@@ -127,7 +137,8 @@
                 <div class="carousel-item">
                     <div class="card border-0">
                         <div class="card-body">
-                            <p class="card-text lead">"Mane nustebino namuko įrengimo paprastumas. Pats pastačiau monaco namuką per keletą dienų."</p>
+                            <p class="card-text lead">"Mane nustebino namuko įrengimo paprastumas. Pats pastačiau monaco
+                                namuką per keletą dienų."</p>
                             <div class="d-flex justify-content-center">
                                 <i class='fa fa-star' style='color: #f3da35'></i>
                                 <i class='fa fa-star' style='color: #f3da35'></i>
@@ -140,11 +151,13 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev" disabled>
+            <button class="carousel-control-prev" type="button" data-bs-target="#review-carousel" data-bs-slide="prev"
+                    disabled>
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next" disabled>
+            <button class="carousel-control-next" type="button" data-bs-target="#review-carousel" data-bs-slide="next"
+                    disabled>
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -163,7 +176,8 @@
             <div class="col-md p-3 py-md-0">
                 <h2>Stilingi Mediniai Namukai</h2>
                 <p class="lead">Mediniai namukai pasižymi skirtingais dizainais ir stiliais</p>
-                <p>Šiuolaikiniai mediniai namukai gali būti pritaikyti jūsų individualiems namų poreikiams ir gyvenimo būdui. Šie namukai siūlo daugybę privalumų, pritaikomų įvairių namų gyventojams.</p>
+                <p>Šiuolaikiniai mediniai namukai gali būti pritaikyti jūsų individualiems namų poreikiams ir gyvenimo
+                    būdui. Šie namukai siūlo daugybę privalumų, pritaikomų įvairių namų gyventojams.</p>
                 <a href="#" class="btn btn-outline-dark mt-3">
                     <i class="fa fa-arrow-right" aria-hidden="true">Skaitykite Daugiau</i>
                 </a>
@@ -181,7 +195,8 @@
             <div class="col-md p-3 py-md-0">
                 <h2>Vasarnamis Pritaikytas Jūsų Sodui</h2>
                 <p class="lead">Nepamirškime apie medinio namuko jaukumą ir natūralumą</p>
-                <p>Mediena suteikia unikalia šilumą ir atmosferą jūsų sodui. Natūralūs medžio apdailos elementai, tokie kaip sienų ir grindų danga, suteikia jaukumo ir švelnumo pojūtį.
+                <p>Mediena suteikia unikalia šilumą ir atmosferą jūsų sodui. Natūralūs medžio apdailos elementai, tokie
+                    kaip sienų ir grindų danga, suteikia jaukumo ir švelnumo pojūtį.
                     Medinis namukas yra puikus, kokybiškas ir greitas pasirinkimas jums ir jūsų namams.</p>
                 <a href="" class="btn btn-outline-dark mt-3">
                     <i class="fa fa-arrow-right" aria-hidden="true">Skaitykite Daugiau</i>
@@ -202,7 +217,8 @@
                 <h2>Funkcionalūs Mediniai Namukai</h2>
                 <p class="lead">Rinkites skirtingo pobuždio medinius namukus</p>
                 <p>Galite atrasti įvairių paskirčių medinius namukus, kurie atitiks jūsų namų poreikius ir pageidavimus.
-                    Tai gali būti pavėsinė, kuri suteiks jums patogią vietą atsipalaiduoti ir mėgautis lauku ar medinis garažas, kuris suteiktų jums saugią vietą laikyti automobilį arba kitus daiktus</p>
+                    Tai gali būti pavėsinė, kuri suteiks jums patogią vietą atsipalaiduoti ir mėgautis lauku ar medinis
+                    garažas, kuris suteiktų jums saugią vietą laikyti automobilį arba kitus daiktus</p>
                 <a href="" class="btn btn-outline-dark mt-3">
                     <i class="fa fa-arrow-right" aria-hidden="true">Skaitykite daugiau</i>
                 </a>
@@ -230,7 +246,8 @@
                             <img src="assets/ourprojects-img-1.png" alt="Our project's" class="img-fluid">
                         </div>
                         <h3 class="card-title">Lengvos Statybos</h3>
-                        <p class="lead">Visą statybos procesą mes palaikemė ryšį su mūsų klientais, nuolat informuodami apie statybos eigą. Mums svarbu suteikti išskirtinę klientų aptarnavimo patirtį.</p>
+                        <p class="lead">Visą statybos procesą mes palaikemė ryšį su mūsų klientais, nuolat informuodami
+                            apie statybos eigą. Mums svarbu suteikti išskirtinę klientų aptarnavimo patirtį.</p>
                         <a href="" class="btn btn-outline-dark mt-3">Skaitykite Daugiau</a>
                     </div>
                 </div>
@@ -242,7 +259,8 @@
                             <img src="assets/ourprojects-img-2.png" alt="Our project's" class="img-fluid">
                         </div>
                         <h3 class="card-title">Greitas Pristatymas</h3>
-                        <p class="lead">Mūsų įmonė užtikrino greitą pristatymą ir statybos įgyvendinimą per efektyvų išplanavimą bei kokybišką bendradarbiavimą su klientu.</p>
+                        <p class="lead">Mūsų įmonė užtikrino greitą pristatymą ir statybos įgyvendinimą per efektyvų
+                            išplanavimą bei kokybišką bendradarbiavimą su klientu.</p>
                         <a href="" class="btn btn-outline-dark mt-3">Skaitykite Daugiau</a>
                     </div>
                 </div>
@@ -254,7 +272,8 @@
                             <img src="assets/ourprojects-img-3.png" alt="Our project's" class="img-fluid">
                         </div>
                         <h3 class="card-title">Inovatyvūs metodai</h3>
-                        <p class="lead">Medinio namuko statybai stengiamės užtikrinti meistriškumą, kuris mus išskiria iš kitų medinių namų statytojų.</p>
+                        <p class="lead">Medinio namuko statybai stengiamės užtikrinti meistriškumą, kuris mus išskiria
+                            iš kitų medinių namų statytojų.</p>
                         </br>
                         <a href="" class="btn btn-outline-dark mt-3">Skaitykite Daugiau</a>
                     </div>
@@ -265,7 +284,7 @@
 </section>
 <!-- Projects end -->
 
-<?php require_once('common/footer.php');?>
+<?php require_once('common/footer.php'); ?>
 
 <script type="text/javascript" src="javascript/slideshow.js"></script>
 <script type="text/javascript" src="javascript/newsletter-form-validation.js"></script>

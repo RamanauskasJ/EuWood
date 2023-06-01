@@ -10,13 +10,16 @@
                 <h5 class="text-light text-uppercase">Sekite mus</h5>
                 <section class="mb-4">
                     <!-- Facebook -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                                class="fa fa-facebook-f"></i></a>
 
                     <!-- Google -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-google"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                                class="fa fa-google"></i></a>
 
                     <!-- Instagram -->
-                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                                class="fa fa-instagram"></i></a>
                 </section>
             </div>
             <div class="col-auto text-center d-none d-lg-block">

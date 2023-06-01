@@ -5,7 +5,7 @@ const images = ['assets/slideshow-picture-01.jpg', 'assets/slideshow-picture-02.
 function updateText() {
     const title = document.querySelector('#newsletter h3');
     const description = document.querySelector('#newsletter p.lead');
-    switch(currentIndex) {
+    switch (currentIndex) {
         case 0:
             title.innerHTML = 'Ieškote <span class="text-warning">Medinių Namukų</span> jūsų poilsiui?';
             description.innerHTML = 'Pasinaudokite proga pajusti vasaros šiluma mūsų jaukiuose ir stilinguose medininiuose nameliuose, puikiai tinkančių pailsėti savaitgaliui arba ilgesniam apsistojimui.';
@@ -56,6 +56,7 @@ function updatePlaceholder() {
         input.placeholder = 'El Paštas';
     }
 }
+
 updatePlaceholder()
 
 // Define the CSS class names

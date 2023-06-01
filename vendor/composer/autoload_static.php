@@ -6,21 +6,21 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitc7bab20a565cd6837a7817aa8a575413
 {
-    public static $prefixLengthsPsr4 = array (
-        'P' => 
-        array (
-            'PHPMailer\\PHPMailer\\' => 20,
-        ),
+    public static $prefixLengthsPsr4 = array(
+        'P' =>
+            array(
+                'PHPMailer\\PHPMailer\\' => 20,
+            ),
     );
 
-    public static $prefixDirsPsr4 = array (
-        'PHPMailer\\PHPMailer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
-        ),
+    public static $prefixDirsPsr4 = array(
+        'PHPMailer\\PHPMailer\\' =>
+            array(
+                0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+            ),
     );
 
-    public static $classMap = array (
+    public static $classMap = array(
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
