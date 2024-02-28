@@ -4,8 +4,6 @@ I initiated this project to advance my proficiency in website creation, leveragi
 
 The project revolves around the creation of a demonstration website for an e-commerce platform, showcasing the integration of HTML, CSS, and JavaScript to provide a seamless and interactive user experience. This serves as a practical test of my abilities in modern website development and user interface design.
 
-![Local Image](assets/readme.png)
-
 ## Table of Contents
 - [EuWood E-Commerce Practice Website](#euwood-e-commerce-practice-website)
     - [Table of Contents](#table-of-contents)
